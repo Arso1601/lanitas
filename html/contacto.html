@@ -1,84 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanitas.cl</title>
-    <!-- Css -->
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanitas.cl</title>
+  <!-- Bootstrap style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Css -->
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
+
 <body>
-    <header>
-        <span>
-            <a href="index.html">
-                <img class="logo" src="../img/logo.jpg" alt="Logo de Lanitas">
-            </a>
-            </span>
-            <span >
-                <a href="index.html">
-                    <img class="publicidad" src="../img/publicidad.jpg" alt="Logo de Lanitas">
-                </a>
-            </span>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="productos.html">productos</a></li>
-                <li><a href="quienes.html">quienes somos</a></li>
-                <li><a href="sucursales.html">sucursales</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Contacto</h1>
-            <div class="formulario">
-                <form>
-                    <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. lanita">
-                </div>
-                <div>
-                    <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo" placeholder="lanita@gmail.com" required>
-                </div>
-            <div>
-                    <label for="descripcion">Mensaje:</label><br>
-                    <textarea id="descripcion" name="descripcion" rows="4" cols="50"  required></textarea>
-                </div>
-                <div>
-                    <input class="btnFormulario" type="submit" value="Enviar">
-                    <input class="btnFormulario" type="reset" value="Cancelar">
-                </div>
-                </form>                
-            </div>
-
-            <div class="foto">
-                    <img class="foto" src="../img/logo.jpg" alt="Logo de Lanitas">
-            </div>
-
-    </main>
-
-    <footer>
-        <div class="ubicacion">
-            <h4>SUCURSALES</h4>
-            <ul>
-            <li>San Diego 895 - Santiago</li>
-            <li>Rita Otaegui 26-84, Valparaíso</li>
-            </ul>
+  <!-- header -->
+  <header class="sticky-top">
+    <div class="row">
+      <div class="col-xl-2 col-md-3 col-xl-sd-12">
+        <a href="../index.html">
+          <img class="logo img-fluid" src="../img/logo.jpg" alt="Logo de Lanitas">
+        </a>
+      </div>
+      <div class="col-xl-10 col-md-9 col-xl-sd-12">
+        <a>
+          <img class="publicidad img-fluid" src="../img/publicidad.jpg" alt="Logo de Lanitas">
+        </a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="nombre img-fluid" src="../img/nombre.jpg"
+            alt="nombre de Lanitas"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="navOpciones nav-link  " aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="navOpciones nav-link" href="productos.html">productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="navOpciones nav-link" href="quienes.html">quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="navOpciones nav-link" href="sucursales.html">sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="activo nav-link" href="contacto.html">contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="pasoInline">
-            <h5>Lanitascl - Todos los derechos reservados</h5>
-        </div>
-        <div class="redes">
-            <h4>Redes Sociales</h4>
-            <ul>
-            <li>@lanitascl</li>
-            </ul>
-        </div>
-        
-    </footer>
-    
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contacto</h1>
+    <!-- Formulario -->
+    <div class="row">
+      <div class="formulario col-xl-5 col-md-11 col-sm-11">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control campo" id="nombre" placeholder="Ej. lanita"
+              aria-describedby="nombreHelp">
+            <div id="nombreHelp" class="form-text">Por favor introduzca su nombre.</div>
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">Email address</label>
+            <input type="email" class="form-control campo" id="Email" placeholder="lanita@gmail.com"
+              aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Por favor introduzca su Email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="campo" id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+            <div id="emailHelp" class="form-text">Por favor introduzca su mensaje</div>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">NO SOY UN ROBOT.</label>
+          </div>
+          <input class="btnFormulario" type="submit" value="Enviar">
+          <input class="btnFormulario" type="reset" value="Cancelar">
+        </form>
+      </div>
+
+
+
+      <div class="foto col-xl-5 col-md-12 col-sm-12">
+        <img class="foto" src="../img/logo.jpg" alt="Logo de Lanitas">
+      </div>
+    </div>
+
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footerContenido">
+      <div class="infoContacto">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Sucursal Santiago: San diego 895</p>
+        <p><i class="fas fa-map-marker-alt"></i> Sucursal Valparaiso: Rita Otaegui 26-84</p>
+        <p><i class="fas fa-phone"></i> Teléfono: +56 9 658 8 0093</p>
+        <p><i class="fas fa-envelope"></i> Email: contacto@coderviajes.com</p>
+      </div>
+      <div class="redesSociales">
+        <h4>Redes Sociales</h4>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class=" footerMarca">
+      <div>
+        <h6>&copy; 2023 Lanitas - Todos los derechos reservados</h6>
+      </div>
+    </div>
+  </footer>
+   <!-- script bs -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

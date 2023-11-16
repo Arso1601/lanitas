@@ -1,112 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    
+    background-color: white;
+
+}
+
 /* Body */
 
 body {
     background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Hader */
-
-header {
-    background-color: white;
-    text-align: center;
-    padding: 0 px 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Logo en header */
 .logo {
-    width: 150px;
+    width: 120px;
 
+}
+
+.nombre {
+    width: 120px;
+    border-radius: 50px;
 }
 
 /* publicidad en header */
 .publicidad {
-    width: 600px;
-    height: 150px;
-
-}
-
-/* Futuramente un banner */
-.banner {
-    border: 2px rgb(68, 17, 129) solid;
-    margin: 10px 10px 10px 10px;
-    padding: 9px 2px 2px 0px;
-    width: 98%;
-    height: auto;
-
+    width: 800px;
+    height: 120px;
 }
 
 /*  menu de navegacion */
 nav {
+    font-size: 1.4rem;
     background-color: pink;
-    /* border-radius: 30px; */
+    color: deeppink;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-}
-
-nav ul li {
-    text-align: center;
-    list-style: none;
-    display: inline-block;
-    width: 160px;
-    height: 30px;
-    padding: 9px 2px 2px 0px;
-
-}
-
-/* enlaces del menu de navegacion  */
-nav a {
-    text-decoration: none;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
     text-transform: uppercase;
-    font-weight: bold;
-    color: black;
+    
+}
 
+.navOpciones {
+    color: deeppink;
+}
 
+.nav a:hover {
+    color: #D0DEEB;
+}
+
+.activo {
+    color: white;
 }
 
 /* Titulos en las paginas */
 h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: deeppink;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.nombre {
+    color: deeppink;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    color: deeppink;
 }
 
-
-/* footer */
-footer {
-    font-size: 20px;
-    background-color: pink;
-    padding: 0px 20px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-
+.blanco {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
-footer ul li {
-    list-style: none;
-}
-
-footer div {
-
-    display: inline-block;
-    padding: 10px;
-    width: 450px;
-    text-align: left;
-    color: deeppink;
-
-
-}
-
-.ubicacion {
-    text-align: left;
-}
-
-.pasoInline {
-    text-align: center;
-}
-
-.redes {
-    text-align: right;
+/* iframe */
+iframe {
+    margin: 2rem;
+    padding: auto;
+    width: 80%;
+    height: 300px;
 }
 
 /* Quienes somos */
@@ -130,11 +111,10 @@ footer div {
 /* formulario de contacto */
 .formulario {
     background-color: pink;
-    margin: 20px 20px;
-    padding: 50px 50px;
+    margin: 1rem;
     border: 4px deeppink solid;
     border-radius: 8px;
-    display: inline-block;
+    padding: 1rem;
 }
 
 label {
@@ -142,6 +122,10 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
     color: white;
+}
+
+.campo {
+    width: 100%;
 }
 
 .btnFormulario {
@@ -154,10 +138,9 @@ label {
 }
 
 .foto {
-    margin: 20px;
-    padding: 10px 10px 10px 50px;
+
     width: auto;
-    height: 250px;
+    height: 500px;
     display: inline-block;
 
 }
@@ -171,68 +154,119 @@ section div {
 
 }
 
-/* Menu vertical de productos */
-
-.menuVertical ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 2px;
-    width: 200px;
-    overflow: hidden;
-    border-radius: 30px;
-    background-color: pink;
-    /* Color de fondo del menú */
-
-}
-
-.menuVertical li {
-    display: block;
-    color: white;
-    /* Color del texto del menú */
-    text-align: center;
-    padding: 14px 16px;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.menuVertical {
-    display: inline-block;
-}
-
-.menuVertical a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-}
-
 /* producto */
-.contenedorProducto {
+.card {
 
-    margin: 30px;
-    padding: 5px;
-    border: 4px solid pink;
-    display: inline-block;
-    border-radius: 40px;
+    border: none;
+}
+
+.imgProducto {
+    border-left: 6px solid pink;
+    border-right: 6px solid pink;
+    border-top: 6px solid pink;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
 }
 
-.contenedorProducto p {
+.infoProducto {
+    border-left: 6px solid pink;
+    border-right: 6px solid pink;
+    border-bottom: 6px solid pink;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
-    background: white;
-    color: black;
+}
+
+.contenedor {
+
+    margin-bottom: 1rem;
+
+}
+
+/*BOTON COMPRAR*/
+
+.btnComprar {
+    background-color: #467BAD;
+    color: #fafafa;
+}
+
+.btnComprar:hover {
+    background-color: #D0DEEB;
+    color: #fafafa;
+}
+
+/* Footer */
+.footer {
+    color: deeppink;
+    padding: 20px 0;
+    background-color: pink;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom: 10px solid white;
+
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.infoContacto p,
+.redesSociales a {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.redesSociales a {
+    color: deeppink;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.footer i {
+    margin-right: 10px;
+}
+
+.footerMarca {
+    margin: 0 auto;
+    padding: 0 20px;
     text-align: center;
-    padding: 10px;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
+}
+
+/* media */
+
+@media (max-width:900px) {
+    .logo {
+        display: none;
+    }
+
+    .publicidad {
+        display: none;
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .formulario {
+        width: 90vw;
+    }
 
 }
 
-.producto {
-    display: inline-block;
-    width: 200px;
-    height: auto;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
+@media (max-width:1023px) {
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
 }

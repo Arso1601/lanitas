@@ -5,98 +5,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanitas.cl</title>
+    <!-- Bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Css -->
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
-    <header>
-        <span>
-            <a href="index.html">
-                <img class="logo" src="../img/logo.jpg" alt="Logo de Lanitas">
-            </a>
-        </span>
-        <span>
-            <a href="index.html">
-                <img class="publicidad" src="../img/publicidad.jpg" alt="Logo de Lanitas">
-            </a>
-        </span>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="productos.html">productos</a></li>
-                <li><a href="quienes.html">quienes somos</a></li>
-                <li><a href="sucursales.html">sucursales</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
+    <!-- header -->
+    <header class="sticky-top">
+        <div class="row">
+            <div class="col-xl-2 col-md-3 col-xl-sd-12">
+                <a href="../index.html">
+                    <img class="logo img-fluid" src="../img/logo.jpg" alt="Logo de Lanitas">
+                </a>
+            </div>
+            <div class="col-xl-10 col-md-9 col-xl-sd-12">
+                <a>
+                    <img class="publicidad img-fluid" src="../img/publicidad.jpg" alt="Logo de Lanitas">
+                </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="nombre img-fluid" src="../img/nombre.jpg"
+                        alt="nombre de Lanitas"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="navOpciones nav-link  " aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="activo nav-link" href="productos.html">productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navOpciones nav-link" href="quienes.html">quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navOpciones nav-link" href="sucursales.html">sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navOpciones nav-link" href="contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <h1>Productos</h1>
-        <div class="menuVertical">
-            <ul>
-                <li><a href="">Ropa</a></li>
-                <li><a href="">Calzado</a></li>
-                <li><a href="">Accesorios</a></li>
-                <li><a href="">Juguetes</a></li>
-            </ul>
-        </div>
 
-        <div class="contenedorProducto">
-            <a href="">
-                <img class="producto" src="../img/producto1.jpg" alt="producto numero 1">
-            </a>
-            <p>Nombre</p>
-            <p>descripcion</p>
-            <p>Precios $</p>
-            <p><a href="">Leer mas</a></p>
+        <div class="contenedor container-fluid">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
         </div>
+<!-- MODAL -->
 
-        <div class="contenedorProducto">
-            <a href="">
-                <img class="producto" src="../img/producto2.jpg" alt="producto numero 2">
-            </a>
-            <p>Nombre</p>
-            <p>descripcion</p>
-            <p>Precios $</p>
-            <p><a href="">Leer mas</a></p>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estas seguro de agregar este producto?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btnFormulario" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btnFormulario">Comprar</button>
+                </div>
+            </div>
         </div>
-
-        <div class="contenedorProducto">
-            <a href="">
-                <img class="producto" src="../img/producto3.jpg" alt="producto numero 3">
-            </a>
-            <p>Nombre</p>
-            <p>descripcion</p>
-            <p>Precios $</p>
-            <p><a href="">Leer mas</a></p>
-        </div>
-
+    </div>
     </main>
-
-    <footer>
-        <div class="ubicacion">
-            <h4>SUCURSALES</h4>
-            <ul>
-                <li>San Diego 895, Santiago</li>
-                <li>Rita Otaegui 26-84, Valparaíso</li>
-            </ul>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footerContenido">
+            <div class="infoContacto">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Sucursal Santiago: San diego 895</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sucursal Valparaiso: Rita Otaegui 26-84</p>
+                <p><i class="fas fa-phone"></i> Teléfono: +56 9 658 8 0093</p>
+                <p><i class="fas fa-envelope"></i> Email: contacto@coderviajes.com</p>
+            </div>
+            <div class="redesSociales">
+                <h4>Redes Sociales</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
         </div>
-
-        <div class="pasoInline">
-            <h5>Lanitascl - Todos los derechos reservados</h5>
+        <div class=" footerMarca">
+            <div>
+                <h6>&copy; 2023 Lanitas - Todos los derechos reservados</h6>
+            </div>
         </div>
-
-        <div class="redes">
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li>@lanitascl</li>
-            </ul>
-        </div>
-
     </footer>
+    <!-- script bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

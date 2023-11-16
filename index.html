@@ -5,45 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanitas.cl</title>
+    <!-- Bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
+
 <body>
-    <header>
-        <span>
-            <a href="index.html">
-                <img class="logo" src="img/logo.jpg" alt="Logo de Lanitas">
-            </a>
-        </span>
-        <span>
-            <a href="index.html">
-                <img class="publicidad" src="img/publicidad.jpg" alt="Logo de Lanitas">
-            </a>
-        </span>
-
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/productos.html">productos</a></li>
-                <li><a href="html/quienes.html">quienes somos</a></li>
-                <li><a href="html/sucursales.html">sucursales</a></li>
-                <li><a href="html/contacto.html">contacto</a></li>
-            </ul>
+    <!-- header -->
+    <header class="sticky-top">
+        <div class="row">
+            <div class="col-xl-2 col-md-3 col-xl-sd-12">
+                <a href="../index.html">
+                    <img class="logo img-fluid" src="../img/logo.jpg" alt="Logo de Lanitas">
+                </a>
+            </div>
+            <div class="col-xl-10 col-md-9 col-xl-sd-12">
+                <a>
+                    <img class="publicidad img-fluid" src="../img/publicidad.jpg" alt="publicidad de Lanitas">
+                </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="nombre img-fluid" src="../img/nombre.jpg"
+                        alt="nombre de Lanitas"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="activo nav-link  " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navOpciones nav-link" href="html/productos.html">productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navOpciones nav-link" href="html/quienes.html">quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navOpciones nav-link" href="html/sucursales.html">sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navOpciones nav-link" href="html/contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
     <main>
-        <div>
-            <a href="index.html">
-                <img class="banner" src="img/banner.jpg" alt="banner de Lanitas">
-            </a>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner.jpg" class="d-block w-100" alt="primera imagen banner">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/publicidad.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <h1>Lanitas</h1>
-        <section>
-            <div>
+        <!-- informacion -->
+        <section class="row">
+            <div class="col-xl-6 col-md-12 col-xl-sd-12">
                 <p>Lanitas es tu destino ideal para la moda infantil. Nuestra tienda de ropa para bebés ofrece prendas
                     de alta calidad, cómodas y llenas de encanto. Desde adorables bodies hasta conjuntos para todas las
                     estaciones, en Lanitas encontrarás todo lo que necesitas para vestir a tu pequeño con estilo.
@@ -53,39 +100,47 @@
                     en la ropa de bebé, por lo que seleccionamos cuidadosamente cada prenda para garantizar la
                     satisfacción de nuestros clientes. </p>
                 <a href="">
-                    <img class="logo" src="img/logo.jpg" alt="Logo de Lanitas">
+                    <img class="logo img-fluid" src="img/logo.jpg" alt="Logo de Lanitas">
                 </a>
             </div>
-            <div>
-                <iframe width="760" height="350" src="https://www.youtube.com/embed/uNTvO3zNwu0?si=YIWLKlXlHhFS-T_L"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            <!-- video informativo -->
+            <div class="col-xl-6 col-md-12 col-xl-sd-12">
+                <iframe src="https://www.youtube.com/embed/uNTvO3zNwu0?si=YIWLKlXlHhFS-T_L" title="YouTube video"
                     allowfullscreen></iframe>
             </div>
+
         </section>
 
     </main>
-
-    <footer>
-        <div class="ubicacion">
-            <h4>SUCURSALES</h4>
-            <ul>
-                <li>San Diego 895 - Santiago</li>
-                <li>Rita Otaegui 26-84, Valparaíso</li>
-            </ul>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footerContenido">
+            <div class="infoContacto">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Sucursal Santiago: San diego 895</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sucursal Valparaiso: Rita Otaegui 26-84</p>
+                <p><i class="fas fa-phone"></i> Teléfono: +56 9 658 8 0093</p>
+                <p><i class="fas fa-envelope"></i> Email: contacto@coderviajes.com</p>
+            </div>
+            <div class="redesSociales">
+                <h4>Redes Sociales</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
         </div>
-        <div class="pasoInline">
-            <h5>Lanitascl - Todos los derechos reservados</h5>
+        <div class=" footerMarca">
+            <div>
+                <h6>&copy; 2023 Lanitas - Todos los derechos reservados</h6>
+            </div>
         </div>
-        <div class="redes">
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li>@lanitascl</li>
-            </ul>
-        </div>
-
     </footer>
-
+     <!-- script bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac484d389e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
