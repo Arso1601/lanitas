@@ -1,0 +1,21 @@
+/* media */
+
+@media (max-width: 900px) {
+
+    .logo,
+    .publicidad,
+    .foto {
+        display: none;
+    }
+
+    .formulario {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 1023px) {
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}

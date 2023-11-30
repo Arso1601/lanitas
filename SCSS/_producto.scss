@@ -1,0 +1,37 @@
+/* producto */
+
+.card {
+    border: none;
+}
+
+.imgProducto {
+    border-left: 6px solid $color-pink;
+    border-right: 6px solid $color-pink;
+    border-top: 6px solid $color-pink;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.infoProducto {
+    border-left: 6px solid $color-pink;
+    border-right: 6px solid $color-pink;
+    border-bottom: 6px solid $color-pink;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.contenedor {
+    margin-bottom: 1rem;
+}
+
+/*BOTON COMPRAR*/
+
+.btnComprar {
+    background-color: #467BAD;
+    color: $color-blanco;
+
+    &:hover {
+        background-color: #D0DEEB;
+        color: $color-blanco;
+    }
+}

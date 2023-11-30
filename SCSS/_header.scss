@@ -1,0 +1,48 @@
+/* header */
+
+header {
+    background-color: $color-blanco;;
+}
+
+/* Logo en header */
+
+.logo {
+    width: 120px;
+}
+
+.nombre {
+    width: 120px;
+    border-radius: 50px;
+}
+
+/* publicidad en header */
+
+.publicidad {
+    width: 800px;
+    height: 120px;
+}
+
+/*  menu de navegacion */
+
+nav {
+    font-size: 1.4rem;
+    background-color: $color-pink;
+    color: $color-deeppink;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top: 5px solid $color-blanco;;
+    border-bottom: 5px solid $color-blanco;;
+    text-transform: uppercase;
+}
+
+.navOpciones {
+    color: $color-deeppink;
+}
+
+.nav a:hover {
+    color: #D0DEEB;
+}
+
+.activo {
+    color: $color-blanco;;
+}
