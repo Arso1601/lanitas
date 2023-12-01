@@ -26,9 +26,8 @@ header {
 /*  menu de navegacion */
 
 nav {
-    font-size: 1.4rem;
+    @include anclas;
     background-color: $color-pink;
-    color: $color-deeppink;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-top: 5px solid $color-blanco;

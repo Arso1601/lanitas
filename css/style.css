@@ -62,9 +62,10 @@ header {
 
 /*  menu de navegacion */
 nav {
-  font-size: 1.4rem;
-  background-color: pink;
   color: deeppink;
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: pink;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-top: 5px solid white;
@@ -74,6 +75,8 @@ nav {
 
 .navOpciones {
   color: deeppink;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .nav a:hover {
@@ -107,19 +110,24 @@ nav {
   margin-bottom: 10px;
 }
 
+.footer a {
+  color: deeppink;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
 .infoContacto p {
   margin: 5px 0;
+  color: deeppink;
+  text-decoration: none;
   font-size: 1.2rem;
-  text-transform: uppercase;
 }
 
 .redesSociales a {
   margin: 5px 0;
-  font-size: 1.2rem;
   color: deeppink;
   text-decoration: none;
-  margin-right: 10px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .footer i {
@@ -127,7 +135,7 @@ nav {
 }
 
 .footerMarca {
-  margin: 0 auto;
+  margin: 20px;
   padding: 0 20px;
   text-align: center;
 }

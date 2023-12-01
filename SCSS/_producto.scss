@@ -27,11 +27,9 @@
 /*BOTON COMPRAR*/
 
 .btnComprar {
-    background-color: #467BAD;
-    color: $color-blanco;
+    @include boton (#467BAD, white);
 
     &:hover {
-        background-color: #D0DEEB;
-        color: $color-blanco;
+        @include boton (#D0DEEB, white);
     }
 }
