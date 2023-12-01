@@ -1,7 +1,8 @@
 /* header */
 
+
 header {
-    background-color: $color-blanco;;
+    background-color: $color-blanco;
 }
 
 /* Logo en header */
@@ -30,13 +31,13 @@ nav {
     color: $color-deeppink;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    border-top: 5px solid $color-blanco;;
-    border-bottom: 5px solid $color-blanco;;
+    border-top: 5px solid $color-blanco;
+    border-bottom: 5px solid $color-blanco;
     text-transform: uppercase;
 }
 
 .navOpciones {
-    color: $color-deeppink;
+    @include anclas;
 }
 
 .nav a:hover {
@@ -44,5 +45,5 @@ nav {
 }
 
 .activo {
-    color: $color-blanco;;
+    color: $color-blanco;
 }

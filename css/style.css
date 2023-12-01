@@ -22,14 +22,6 @@ p {
   text-align: justify;
 }
 
-/* iframe */
-iframe {
-  margin: 2rem;
-  padding: auto;
-  width: 80%;
-  height: 300px;
-}
-
 /* media */
 @media (max-width: 900px) {
   .logo,
@@ -118,6 +110,7 @@ nav {
 .infoContacto p {
   margin: 5px 0;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .redesSociales a {
@@ -167,11 +160,11 @@ nav {
 /*BOTON COMPRAR*/
 .btnComprar {
   background-color: #467BAD;
-  color: #fafafa;
+  color: white;
 }
 .btnComprar:hover {
   background-color: #D0DEEB;
-  color: #fafafa;
+  color: white;
 }
 
 /* Quienes somos */
@@ -231,6 +224,7 @@ section div {
   text-align: left;
 }
 
+/* iframe */
 iframe {
   margin: 2rem;
   padding: auto;
