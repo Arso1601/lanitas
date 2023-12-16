@@ -20,16 +20,21 @@
 
 <body>
     <!-- header -->
-    <header class="sticky-top">
+    <header>
         <div class="row">
-            <div class="col-xl-2 col-md-3 col-xl-sd-12">
+            <div class="col-xl-4 col-md-3 col-xl-sd-12">
                 <a href="../index.html">
                     <img class="logo img-fluid" src="../img/logo.jpg" alt="Logo de Lanitas">
                 </a>
             </div>
-            <div class="col-xl-10 col-md-9 col-xl-sd-12">
-                <a>
-                    <img class="publicidad img-fluid" src="../img/publicidad.jpg" alt="Logo de Lanitas">
+            <div class="col-xl-4 col-md-9 col-xl-sd-12">
+      
+                <img class="publicidad img-fluid" src="../img/extension.jpg" alt="publicidad de Lanitas">
+      
+            </div>
+            <div class="col-xl-4 col-md-3 col-xl-sd-12">
+                <a href="../index.html">
+                    <img class="logo img-fluid" src="../img/logo.jpg" alt="Logo de Lanitas">
                 </a>
             </div>
         </div>
@@ -42,12 +47,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav navbar-nav mx-auto">
+                    <ul class="nav navbar-nav">
                         <li class="nav-item">
-                            <a class="navOpciones nav-link  " aria-current="page" href="../index.html">Home</a>
+                            <a class="activo nav-link  " aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="activo nav-link" href="productos.html">productos</a>
+                            <a class="navOpciones nav-link" href="productos.html">productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="navOpciones nav-link" href="quienes.html">quienes somos</a>
@@ -59,6 +64,10 @@
                             <a class="navOpciones nav-link" href="contacto.html">contacto</a>
                         </li>
                     </ul>
+                    <form class="d-flex mx-auto">
+                        <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Busqueda">
+                        <button class="btnFormulario" type="submit">Buscar</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -70,9 +79,25 @@
         <div class="contenedor container-fluid">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="card col-xl-3 col-md-6 col-sm-12">
-                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <img src="../img/productos/body.jpg" class="imgProducto card-img-top"
+                        alt="bodys de niña de 0 a 6 meses">
                     <div class="infoProducto card-body">
-                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
+                        <h5 class="card-title">Set 3 Pzas Body Niña Multicolor</h5>
+                        <p class="card-text"> Full estampado al agua suave al taco con diseño de colores
+                            difuminados, con detalle recogido en los hombros. Detalle flores bordada. Cuello con vuelos
+                            y abertura espalda
+                            y entrepierna.</p>
+                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="../img/productos/bodyniño.jpg" class="imgProducto card-img-top"
+                        alt="bodys de niña de 0 a 6 meses">
+                    <div class="infoProducto card-body">
+                        <h5 class="card-title">Body Recien Nacido 3 diseños distintos </h5>
                         <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches
                             para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
                         <button type="button" class="btn btnComprar" data-bs-toggle="modal"
@@ -82,11 +107,13 @@
                     </div>
                 </div>
                 <div class="card col-xl-3 col-md-6 col-sm-12">
-                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <img src="../img/productos/buzo.jpg" class="imgProducto card-img-top"
+                        alt="Buzo M/Raglan Bebé Niño estampado">
                     <div class="infoProducto card-body">
-                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
-                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches
-                            para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <h5 class="card-title">Buzo M/Raglan Bebé Niño estampado</h5>
+                        <p class="card-text"> Buzo M/Raglan Bebé Niño estampado delantero práctico y cómodo para las
+                            tardes de juego, Color: Azul Composición: 80 % Cotton-20 % Poliester Temporadas: Verano </p>
+
                         <button type="button" class="btn btnComprar" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Comprar
@@ -94,11 +121,12 @@
                     </div>
                 </div>
                 <div class="card col-xl-3 col-md-6 col-sm-12">
-                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <img src="../img/productos/babero.jpg" class="imgProducto card-img-top" alt="producto lanita">
                     <div class="infoProducto card-body">
-                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
-                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches
-                            para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <h5 class="card-title">Babero Gamuza Pack 3Pcs. Bebé</h5>
+                        <p class="card-text">La prenda Babero Gamuza Pack 3Pcs. Bebé Surtido fue diseñada para acompañar
+                            el crecimiento de tu niño(a) preparado para la aventura del día a día, manteniendo un estilo
+                            único.</p>
                         <button type="button" class="btn btnComprar" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Comprar
@@ -106,11 +134,11 @@
                     </div>
                 </div>
                 <div class="card col-xl-3 col-md-6 col-sm-12">
-                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <img src="../img/productos/botas.png" class="imgProducto card-img-top" alt="Botines de 0 a 12 M">
                     <div class="infoProducto card-body">
-                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
-                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches
-                            para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <h5 class="card-title">Botines de 0 a 12 M</h5>
+                        <p class="card-text">otones para bebé: suaves, prácticos y adorables. Con cierre a presión para
+                            vestir fácilmente. El toque perfecto para la moda cómoda de los más pequeños.</p>
                         <button type="button" class="btn btnComprar" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Comprar
@@ -118,11 +146,12 @@
                     </div>
                 </div>
                 <div class="card col-xl-3 col-md-6 col-sm-12">
-                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <img src="../img/productos/zapatillaniña.jpg" class="imgProducto card-img-top"
+                        alt="Cover Shoes niña de 12 a 18 M">
                     <div class="infoProducto card-body">
-                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
-                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches
-                            para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <h5 class="card-title">Cover Shoes niña de 12 a 18 M</h5>
+                        <p class="card-text">Zapatillas para niña: elegantes y divertidas, con toques de brillo y
+                            comodidad para cada paso. ¡Estilo encantador para las pequeñas fashionistas!.</p>
                         <button type="button" class="btn btnComprar" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Comprar
@@ -130,11 +159,12 @@
                     </div>
                 </div>
                 <div class="card col-xl-3 col-md-6 col-sm-12">
-                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <img src="../img/productos/zapatilla.jpg" class="imgProducto card-img-top"
+                        alt="Cover Shoes 0 a 12 M">
                     <div class="infoProducto card-body">
-                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
-                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches
-                            para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
+                        <h5 class="card-title">Cover Shoes de 0 a 12 M</h5>
+                        <p class="card-text">Zapatillas para bebé: cómodas, ligeras y adorables, ideales para los
+                            primeros pasos. ¡Estilo y suavidad para los pequeños exploradores!.</p>
                         <button type="button" class="btn btnComprar" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Comprar
@@ -142,19 +172,7 @@
                     </div>
                 </div>
                 <div class="card col-xl-3 col-md-6 col-sm-12">
-                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
-                    <div class="infoProducto card-body">
-                        <h5 class="card-title">Bodies de 0 a 12 M</h5>
-                        <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches
-                            para cambiar fácilmente. Ideal para cuidar a tu pequeño con estilo.</p>
-                        <button type="button" class="btn btnComprar" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            Comprar
-                        </button>
-                    </div>
-                </div>
-                <div class="card col-xl-3 col-md-6 col-sm-12">
-                    <img src="../img/producto2.jpg" class="imgProducto card-img-top" alt="producto lanita">
+                    <img src="../img/productos/vestido.jpg" class="imgProducto card-img-top" alt="producto lanita">
                     <div class="infoProducto card-body">
                         <h5 class="card-title">Bodies de 0 a 12 M</h5>
                         <p class="card-text">Bodies para bebé: Suaves, cómodos y adorables. Diseño práctico con broches
