@@ -1,12 +1,12 @@
 @mixin anclas {
     color: deeppink;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 1.2rem;
 
 }
 
-@mixin boton ( $bgcolor,$color,) {
+@mixin boton ($bgcolor, $color, ) {
     background-color: $bgcolor;
     color: $color;
-    
+
 }
